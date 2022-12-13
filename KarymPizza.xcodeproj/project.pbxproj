@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6D294879E1007352C2 /* AppDelegate.swift */; };
+		F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */; };
+		F2BF6F72294879E1007352C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F71294879E1007352C2 /* ViewController.swift */; };
+		F2BF6F75294879E1007352C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BF6F73294879E1007352C2 /* Main.storyboard */; };
+		F2BF6F77294879E2007352C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BF6F76294879E2007352C2 /* Assets.xcassets */; };
+		F2BF6F7A294879E2007352C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BF6F78294879E2007352C2 /* LaunchScreen.storyboard */; };
+		F2BF6F85294879E3007352C2 /* KarymPizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F84294879E3007352C2 /* KarymPizzaTests.swift */; };
+		F2BF6F8F294879E3007352C2 /* KarymPizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F8E294879E3007352C2 /* KarymPizzaUITests.swift */; };
+		F2BF6F91294879E3007352C2 /* KarymPizzaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F90294879E3007352C2 /* KarymPizzaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2BF6F81294879E3007352C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2BF6F62294879E0007352C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BF6F69294879E1007352C2;
+			remoteInfo = KarymPizza;
+		};
+		F2BF6F8B294879E3007352C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2BF6F62294879E0007352C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BF6F69294879E1007352C2;
+			remoteInfo = KarymPizza;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2BF6F6A294879E1007352C2 /* KarymPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarymPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BF6F6D294879E1007352C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F2BF6F71294879E1007352C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2BF6F74294879E1007352C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2BF6F76294879E2007352C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2BF6F79294879E2007352C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2BF6F7B294879E2007352C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2BF6F80294879E3007352C2 /* KarymPizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarymPizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BF6F84294879E3007352C2 /* KarymPizzaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarymPizzaTests.swift; sourceTree = "<group>"; };
+		F2BF6F8A294879E3007352C2 /* KarymPizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarymPizzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BF6F8E294879E3007352C2 /* KarymPizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarymPizzaUITests.swift; sourceTree = "<group>"; };
+		F2BF6F90294879E3007352C2 /* KarymPizzaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarymPizzaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2BF6F67294879E1007352C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF6F7D294879E3007352C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF6F87294879E3007352C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2BF6F61294879E0007352C2 = {
+			isa = PBXGroup;
+			children = (
+				F2BF6F6C294879E1007352C2 /* KarymPizza */,
+				F2BF6F83294879E3007352C2 /* KarymPizzaTests */,
+				F2BF6F8D294879E3007352C2 /* KarymPizzaUITests */,
+				F2BF6F6B294879E1007352C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2BF6F6B294879E1007352C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6F6A294879E1007352C2 /* KarymPizza.app */,
+				F2BF6F80294879E3007352C2 /* KarymPizzaTests.xctest */,
+				F2BF6F8A294879E3007352C2 /* KarymPizzaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2BF6F6C294879E1007352C2 /* KarymPizza */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6F6D294879E1007352C2 /* AppDelegate.swift */,
+				F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */,
+				F2BF6F71294879E1007352C2 /* ViewController.swift */,
+				F2BF6F73294879E1007352C2 /* Main.storyboard */,
+				F2BF6F76294879E2007352C2 /* Assets.xcassets */,
+				F2BF6F78294879E2007352C2 /* LaunchScreen.storyboard */,
+				F2BF6F7B294879E2007352C2 /* Info.plist */,
+			);
+			path = KarymPizza;
+			sourceTree = "<group>";
+		};
+		F2BF6F83294879E3007352C2 /* KarymPizzaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6F84294879E3007352C2 /* KarymPizzaTests.swift */,
+			);
+			path = KarymPizzaTests;
+			sourceTree = "<group>";
+		};
+		F2BF6F8D294879E3007352C2 /* KarymPizzaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6F8E294879E3007352C2 /* KarymPizzaUITests.swift */,
+				F2BF6F90294879E3007352C2 /* KarymPizzaUITestsLaunchTests.swift */,
+			);
+			path = KarymPizzaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2BF6F69294879E1007352C2 /* KarymPizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BF6F94294879E3007352C2 /* Build configuration list for PBXNativeTarget "KarymPizza" */;
+			buildPhases = (
+				F2BF6F66294879E1007352C2 /* Sources */,
+				F2BF6F67294879E1007352C2 /* Frameworks */,
+				F2BF6F68294879E1007352C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KarymPizza;
+			productName = KarymPizza;
+			productReference = F2BF6F6A294879E1007352C2 /* KarymPizza.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2BF6F7F294879E3007352C2 /* KarymPizzaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BF6F97294879E3007352C2 /* Build configuration list for PBXNativeTarget "KarymPizzaTests" */;
+			buildPhases = (
+				F2BF6F7C294879E3007352C2 /* Sources */,
+				F2BF6F7D294879E3007352C2 /* Frameworks */,
+				F2BF6F7E294879E3007352C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2BF6F82294879E3007352C2 /* PBXTargetDependency */,
+			);
+			name = KarymPizzaTests;
+			productName = KarymPizzaTests;
+			productReference = F2BF6F80294879E3007352C2 /* KarymPizzaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2BF6F89294879E3007352C2 /* KarymPizzaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BF6F9A294879E3007352C2 /* Build configuration list for PBXNativeTarget "KarymPizzaUITests" */;
+			buildPhases = (
+				F2BF6F86294879E3007352C2 /* Sources */,
+				F2BF6F87294879E3007352C2 /* Frameworks */,
+				F2BF6F88294879E3007352C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2BF6F8C294879E3007352C2 /* PBXTargetDependency */,
+			);
+			name = KarymPizzaUITests;
+			productName = KarymPizzaUITests;
+			productReference = F2BF6F8A294879E3007352C2 /* KarymPizzaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2BF6F62294879E0007352C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F2BF6F69294879E1007352C2 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					F2BF6F7F294879E3007352C2 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F2BF6F69294879E1007352C2;
+					};
+					F2BF6F89294879E3007352C2 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F2BF6F69294879E1007352C2;
+					};
+				};
+			};
+			buildConfigurationList = F2BF6F65294879E0007352C2 /* Build configuration list for PBXProject "KarymPizza" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2BF6F61294879E0007352C2;
+			productRefGroup = F2BF6F6B294879E1007352C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2BF6F69294879E1007352C2 /* KarymPizza */,
+				F2BF6F7F294879E3007352C2 /* KarymPizzaTests */,
+				F2BF6F89294879E3007352C2 /* KarymPizzaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2BF6F68294879E1007352C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF6F7A294879E2007352C2 /* LaunchScreen.storyboard in Resources */,
+				F2BF6F77294879E2007352C2 /* Assets.xcassets in Resources */,
+				F2BF6F75294879E1007352C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF6F7E294879E3007352C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF6F88294879E3007352C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2BF6F66294879E1007352C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF6F72294879E1007352C2 /* ViewController.swift in Sources */,
+				F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */,
+				F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF6F7C294879E3007352C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF6F85294879E3007352C2 /* KarymPizzaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BF6F86294879E3007352C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BF6F91294879E3007352C2 /* KarymPizzaUITestsLaunchTests.swift in Sources */,
+				F2BF6F8F294879E3007352C2 /* KarymPizzaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2BF6F82294879E3007352C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BF6F69294879E1007352C2 /* KarymPizza */;
+			targetProxy = F2BF6F81294879E3007352C2 /* PBXContainerItemProxy */;
+		};
+		F2BF6F8C294879E3007352C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BF6F69294879E1007352C2 /* KarymPizza */;
+			targetProxy = F2BF6F8B294879E3007352C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2BF6F73294879E1007352C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2BF6F74294879E1007352C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2BF6F78294879E2007352C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2BF6F79294879E2007352C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2BF6F92294879E3007352C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2BF6F93294879E3007352C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2BF6F95294879E3007352C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T73BLRAKR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KarymPizza/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarymPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2BF6F96294879E3007352C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T73BLRAKR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KarymPizza/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarymPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2BF6F98294879E3007352C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T73BLRAKR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarymPizzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KarymPizza.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KarymPizza";
+			};
+			name = Debug;
+		};
+		F2BF6F99294879E3007352C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T73BLRAKR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarymPizzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KarymPizza.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KarymPizza";
+			};
+			name = Release;
+		};
+		F2BF6F9B294879E3007352C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T73BLRAKR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarymPizzaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KarymPizza;
+			};
+			name = Debug;
+		};
+		F2BF6F9C294879E3007352C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T73BLRAKR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarymPizzaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KarymPizza;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2BF6F65294879E0007352C2 /* Build configuration list for PBXProject "KarymPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BF6F92294879E3007352C2 /* Debug */,
+				F2BF6F93294879E3007352C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BF6F94294879E3007352C2 /* Build configuration list for PBXNativeTarget "KarymPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BF6F95294879E3007352C2 /* Debug */,
+				F2BF6F96294879E3007352C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BF6F97294879E3007352C2 /* Build configuration list for PBXNativeTarget "KarymPizzaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BF6F98294879E3007352C2 /* Debug */,
+				F2BF6F99294879E3007352C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BF6F9A294879E3007352C2 /* Build configuration list for PBXNativeTarget "KarymPizzaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BF6F9B294879E3007352C2 /* Debug */,
+				F2BF6F9C294879E3007352C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2BF6F62294879E0007352C2 /* Project object */;
+}
