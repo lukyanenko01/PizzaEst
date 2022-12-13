@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19ED770D073371B78C83E5B1 /* Pods_KarymPizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFF77B53283E13F12909289 /* Pods_KarymPizza.framework */; };
+		49E677849A570D628D68D64B /* Pods_KarymPizza_KarymPizzaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E020C1B0B75941A342C42A3 /* Pods_KarymPizza_KarymPizzaUITests.framework */; };
+		D83D86597E1A7BD2F4E27ACD /* Pods_KarymPizzaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD29CCEC17E15E4C8B88A25 /* Pods_KarymPizzaTests.framework */; };
 		F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6D294879E1007352C2 /* AppDelegate.swift */; };
 		F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */; };
 		F2BF6F72294879E1007352C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F71294879E1007352C2 /* HomeViewController.swift */; };
@@ -26,6 +29,12 @@
 		F2BF6FBB2948835F007352C2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F2BF6FBA2948835F007352C2 /* FirebaseMessaging */; };
 		F2BF6FBD2948835F007352C2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F2BF6FBC2948835F007352C2 /* FirebaseStorage */; };
 		F2BF6FBF29488E55007352C2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */; };
+		F2C1728A2948A37200BF96E1 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C172892948A37200BF96E1 /* DataBaseService.swift */; };
+		F2C1728C2948A3B300BF96E1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1728B2948A3B300BF96E1 /* Product.swift */; };
+		F2C1728E2948A3EE00BF96E1 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1728D2948A3EE00BF96E1 /* MenuViewModel.swift */; };
+		F2C172962948C59200BF96E1 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C172952948C59200BF96E1 /* MenuCell.swift */; };
+		F2CD66C02948EE580013B38A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66BF2948EE580013B38A /* UILabelExtension.swift */; };
+		F2CDC6112948DA94001871A0 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC6102948DA94001871A0 /* ViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0518E63F3886C08422AD4BD2 /* Pods-KarymPizzaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizzaTests.release.xcconfig"; path = "Target Support Files/Pods-KarymPizzaTests/Pods-KarymPizzaTests.release.xcconfig"; sourceTree = "<group>"; };
+		1E1087475AAC11DF33072E57 /* Pods-KarymPizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza.release.xcconfig"; path = "Target Support Files/Pods-KarymPizza/Pods-KarymPizza.release.xcconfig"; sourceTree = "<group>"; };
+		2BBB6E066C7443720449AC18 /* Pods-KarymPizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza.debug.xcconfig"; path = "Target Support Files/Pods-KarymPizza/Pods-KarymPizza.debug.xcconfig"; sourceTree = "<group>"; };
+		2FFF77B53283E13F12909289 /* Pods_KarymPizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarymPizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD29CCEC17E15E4C8B88A25 /* Pods_KarymPizzaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarymPizzaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6577805F02156C0E52ED30DA /* Pods-KarymPizzaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizzaTests.debug.xcconfig"; path = "Target Support Files/Pods-KarymPizzaTests/Pods-KarymPizzaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E020C1B0B75941A342C42A3 /* Pods_KarymPizza_KarymPizzaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarymPizza_KarymPizzaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA24419FF494BADCE8085CF /* Pods-KarymPizza-KarymPizzaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza-KarymPizzaUITests.release.xcconfig"; path = "Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DA325C60E08D1C190564671E /* Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig"; path = "Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2BF6F6A294879E1007352C2 /* KarymPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarymPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BF6F6D294879E1007352C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +82,12 @@
 		F2BF6FAC29488138007352C2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F2BF6FB129488212007352C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		F2C172892948A37200BF96E1 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
+		F2C1728B2948A3B300BF96E1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F2C1728D2948A3EE00BF96E1 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		F2C172952948C59200BF96E1 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		F2CD66BF2948EE580013B38A /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		F2CDC6102948DA94001871A0 /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +100,7 @@
 				F2BF6FB52948835E007352C2 /* FirebaseAuth in Frameworks */,
 				F2BF6FBD2948835F007352C2 /* FirebaseStorage in Frameworks */,
 				F2BF6FB92948835E007352C2 /* FirebaseFirestore in Frameworks */,
+				19ED770D073371B78C83E5B1 /* Pods_KarymPizza.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83D86597E1A7BD2F4E27ACD /* Pods_KarymPizzaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +116,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E677849A570D628D68D64B /* Pods_KarymPizza_KarymPizzaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026B5F0FC5BE7058AE653BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FFF77B53283E13F12909289 /* Pods_KarymPizza.framework */,
+				9E020C1B0B75941A342C42A3 /* Pods_KarymPizza_KarymPizzaUITests.framework */,
+				4BD29CCEC17E15E4C8B88A25 /* Pods_KarymPizzaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D6D562BB4BB43AAA4599D06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BBB6E066C7443720449AC18 /* Pods-KarymPizza.debug.xcconfig */,
+				1E1087475AAC11DF33072E57 /* Pods-KarymPizza.release.xcconfig */,
+				DA325C60E08D1C190564671E /* Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig */,
+				CFA24419FF494BADCE8085CF /* Pods-KarymPizza-KarymPizzaUITests.release.xcconfig */,
+				6577805F02156C0E52ED30DA /* Pods-KarymPizzaTests.debug.xcconfig */,
+				0518E63F3886C08422AD4BD2 /* Pods-KarymPizzaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F2BF6F61294879E0007352C2 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +153,8 @@
 				F2BF6F83294879E3007352C2 /* KarymPizzaTests */,
 				F2BF6F8D294879E3007352C2 /* KarymPizzaUITests */,
 				F2BF6F6B294879E1007352C2 /* Products */,
+				1D6D562BB4BB43AAA4599D06 /* Pods */,
+				026B5F0FC5BE7058AE653BF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,10 +173,10 @@
 			children = (
 				F2BF6FA529488058007352C2 /* NetworkManager */,
 				F2BF6FA32948801F007352C2 /* Models */,
-				F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */,
+				F2BF6FAF29488158007352C2 /* MenuModule */,
 				F2BF6FA229488008007352C2 /* Views */,
 				F2BF6FA42948802C007352C2 /* ViewModels */,
-				F2BF6F9F29487EB1007352C2 /* Protocols */,
+				F2CD66BE2948EE1D0013B38A /* Extension */,
 				F2BF6F9D29487A90007352C2 /* Application */,
 				F2BF6F9E29487A9D007352C2 /* Resources */,
 			);
@@ -168,21 +220,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		F2BF6F9F29487EB1007352C2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		F2BF6FA229488008007352C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F2BF6FAE29488149007352C2 /* Home */,
-				F2BF6FAF29488158007352C2 /* Menu */,
-				F2BF6FB02948816C007352C2 /* Cart */,
+				F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */,
 				F2BF6FAA2948810A007352C2 /* ContactsViewController.swift */,
 				F2BF6FAC29488138007352C2 /* ProfileViewController.swift */,
+				F2BF6FAE29488149007352C2 /* Home */,
+				F2CDC6122948E335001871A0 /* Menu */,
+				F2BF6FB02948816C007352C2 /* Cart */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +236,7 @@
 		F2BF6FA32948801F007352C2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F2C1728B2948A3B300BF96E1 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +244,7 @@
 		F2BF6FA42948802C007352C2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F2C1728D2948A3EE00BF96E1 /* MenuViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -204,6 +252,7 @@
 		F2BF6FA529488058007352C2 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				F2C172892948A37200BF96E1 /* DataBaseService.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -216,12 +265,11 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		F2BF6FAF29488158007352C2 /* Menu */ = {
+		F2BF6FAF29488158007352C2 /* MenuModule */ = {
 			isa = PBXGroup;
 			children = (
-				F2BF6FA6294880A2007352C2 /* MenuViewController.swift */,
 			);
-			path = Menu;
+			path = MenuModule;
 			sourceTree = "<group>";
 		};
 		F2BF6FB02948816C007352C2 /* Cart */ = {
@@ -232,6 +280,32 @@
 			path = Cart;
 			sourceTree = "<group>";
 		};
+		F2CD66BE2948EE1D0013B38A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F2CD66BF2948EE580013B38A /* UILabelExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F2CDC60F2948DA7E001871A0 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				F2C172952948C59200BF96E1 /* MenuCell.swift */,
+				F2CDC6102948DA94001871A0 /* ViewCell.swift */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
+		F2CDC6122948E335001871A0 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6FA6294880A2007352C2 /* MenuViewController.swift */,
+				F2CDC60F2948DA7E001871A0 /* MenuCell */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,9 +313,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2BF6F94294879E3007352C2 /* Build configuration list for PBXNativeTarget "KarymPizza" */;
 			buildPhases = (
+				B07E1B4CC1B7026D076F32E3 /* [CP] Check Pods Manifest.lock */,
 				F2BF6F66294879E1007352C2 /* Sources */,
 				F2BF6F67294879E1007352C2 /* Frameworks */,
 				F2BF6F68294879E1007352C2 /* Resources */,
+				3D6E48A1D41726BC19109359 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2BF6F97294879E3007352C2 /* Build configuration list for PBXNativeTarget "KarymPizzaTests" */;
 			buildPhases = (
+				067B5D903348FF50CA553362 /* [CP] Check Pods Manifest.lock */,
 				F2BF6F7C294879E3007352C2 /* Sources */,
 				F2BF6F7D294879E3007352C2 /* Frameworks */,
 				F2BF6F7E294879E3007352C2 /* Resources */,
@@ -281,9 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2BF6F9A294879E3007352C2 /* Build configuration list for PBXNativeTarget "KarymPizzaUITests" */;
 			buildPhases = (
+				3458AFD5809722E17ACFB86B /* [CP] Check Pods Manifest.lock */,
 				F2BF6F86294879E3007352C2 /* Sources */,
 				F2BF6F87294879E3007352C2 /* Frameworks */,
 				F2BF6F88294879E3007352C2 /* Resources */,
+				826896547EEE9170835D74B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,17 +447,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		067B5D903348FF50CA553362 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KarymPizzaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3458AFD5809722E17ACFB86B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KarymPizza-KarymPizzaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D6E48A1D41726BC19109359 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KarymPizza/Pods-KarymPizza-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KarymPizza/Pods-KarymPizza-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KarymPizza/Pods-KarymPizza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		826896547EEE9170835D74B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B07E1B4CC1B7026D076F32E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KarymPizza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2BF6F66294879E1007352C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C172962948C59200BF96E1 /* MenuCell.swift in Sources */,
+				F2CDC6112948DA94001871A0 /* ViewCell.swift in Sources */,
 				F2BF6F72294879E1007352C2 /* HomeViewController.swift in Sources */,
 				F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */,
+				F2CD66C02948EE580013B38A /* UILabelExtension.swift in Sources */,
+				F2C1728A2948A37200BF96E1 /* DataBaseService.swift in Sources */,
 				F2BF6FBF29488E55007352C2 /* MainTabBarController.swift in Sources */,
 				F2BF6FA9294880D0007352C2 /* CartViewController.swift in Sources */,
+				F2C1728E2948A3EE00BF96E1 /* MenuViewModel.swift in Sources */,
 				F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */,
 				F2BF6FAD29488138007352C2 /* ProfileViewController.swift in Sources */,
+				F2C1728C2948A3B300BF96E1 /* Product.swift in Sources */,
 				F2BF6FA7294880A2007352C2 /* MenuViewController.swift in Sources */,
 				F2BF6FAB2948810A007352C2 /* ContactsViewController.swift in Sources */,
 			);
@@ -544,6 +732,7 @@
 		};
 		F2BF6F95294879E3007352C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BBB6E066C7443720449AC18 /* Pods-KarymPizza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -575,6 +764,7 @@
 		};
 		F2BF6F96294879E3007352C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1087475AAC11DF33072E57 /* Pods-KarymPizza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -606,6 +796,7 @@
 		};
 		F2BF6F98294879E3007352C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6577805F02156C0E52ED30DA /* Pods-KarymPizzaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -626,6 +817,7 @@
 		};
 		F2BF6F99294879E3007352C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0518E63F3886C08422AD4BD2 /* Pods-KarymPizzaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,6 +838,7 @@
 		};
 		F2BF6F9B294879E3007352C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA325C60E08D1C190564671E /* Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -664,6 +857,7 @@
 		};
 		F2BF6F9C294879E3007352C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA24419FF494BADCE8085CF /* Pods-KarymPizza-KarymPizzaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
