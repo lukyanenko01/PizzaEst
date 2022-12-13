@@ -25,6 +25,7 @@
 		F2BF6FB92948835E007352C2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F2BF6FB82948835E007352C2 /* FirebaseFirestore */; };
 		F2BF6FBB2948835F007352C2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F2BF6FBA2948835F007352C2 /* FirebaseMessaging */; };
 		F2BF6FBD2948835F007352C2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F2BF6FBC2948835F007352C2 /* FirebaseStorage */; };
+		F2BF6FBF29488E55007352C2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		F2BF6FAA2948810A007352C2 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		F2BF6FAC29488138007352C2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F2BF6FB129488212007352C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				F2BF6FA529488058007352C2 /* NetworkManager */,
 				F2BF6FA32948801F007352C2 /* Models */,
+				F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */,
 				F2BF6FA229488008007352C2 /* Views */,
 				F2BF6FA42948802C007352C2 /* ViewModels */,
 				F2BF6F9F29487EB1007352C2 /* Protocols */,
@@ -178,8 +181,8 @@
 				F2BF6FAE29488149007352C2 /* Home */,
 				F2BF6FAF29488158007352C2 /* Menu */,
 				F2BF6FB02948816C007352C2 /* Cart */,
-				F2BF6FAC29488138007352C2 /* ProfileViewController.swift */,
 				F2BF6FAA2948810A007352C2 /* ContactsViewController.swift */,
+				F2BF6FAC29488138007352C2 /* ProfileViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			files = (
 				F2BF6F72294879E1007352C2 /* HomeViewController.swift in Sources */,
 				F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */,
+				F2BF6FBF29488E55007352C2 /* MainTabBarController.swift in Sources */,
 				F2BF6FA9294880D0007352C2 /* CartViewController.swift in Sources */,
 				F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */,
 				F2BF6FAD29488138007352C2 /* ProfileViewController.swift in Sources */,
