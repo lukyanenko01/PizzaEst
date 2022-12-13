@@ -10,7 +10,6 @@
 		F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6D294879E1007352C2 /* AppDelegate.swift */; };
 		F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */; };
 		F2BF6F72294879E1007352C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F71294879E1007352C2 /* ViewController.swift */; };
-		F2BF6F75294879E1007352C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BF6F73294879E1007352C2 /* Main.storyboard */; };
 		F2BF6F77294879E2007352C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BF6F76294879E2007352C2 /* Assets.xcassets */; };
 		F2BF6F7A294879E2007352C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BF6F78294879E2007352C2 /* LaunchScreen.storyboard */; };
 		F2BF6F85294879E3007352C2 /* KarymPizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F84294879E3007352C2 /* KarymPizzaTests.swift */; };
@@ -40,7 +39,6 @@
 		F2BF6F6D294879E1007352C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F2BF6F71294879E1007352C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F2BF6F74294879E1007352C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2BF6F76294879E2007352C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2BF6F79294879E2007352C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2BF6F7B294879E2007352C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +97,9 @@
 		F2BF6F6C294879E1007352C2 /* KarymPizza */ = {
 			isa = PBXGroup;
 			children = (
-				F2BF6F6D294879E1007352C2 /* AppDelegate.swift */,
-				F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */,
 				F2BF6F71294879E1007352C2 /* ViewController.swift */,
-				F2BF6F73294879E1007352C2 /* Main.storyboard */,
-				F2BF6F76294879E2007352C2 /* Assets.xcassets */,
-				F2BF6F78294879E2007352C2 /* LaunchScreen.storyboard */,
-				F2BF6F7B294879E2007352C2 /* Info.plist */,
+				F2BF6F9D29487A90007352C2 /* Application */,
+				F2BF6F9E29487A9D007352C2 /* Resources */,
 			);
 			path = KarymPizza;
 			sourceTree = "<group>";
@@ -125,6 +119,25 @@
 				F2BF6F90294879E3007352C2 /* KarymPizzaUITestsLaunchTests.swift */,
 			);
 			path = KarymPizzaUITests;
+			sourceTree = "<group>";
+		};
+		F2BF6F9D29487A90007352C2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6F6D294879E1007352C2 /* AppDelegate.swift */,
+				F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F2BF6F9E29487A9D007352C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6F76294879E2007352C2 /* Assets.xcassets */,
+				F2BF6F78294879E2007352C2 /* LaunchScreen.storyboard */,
+				F2BF6F7B294879E2007352C2 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +246,6 @@
 			files = (
 				F2BF6F7A294879E2007352C2 /* LaunchScreen.storyboard in Resources */,
 				F2BF6F77294879E2007352C2 /* Assets.xcassets in Resources */,
-				F2BF6F75294879E1007352C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F2BF6F73294879E1007352C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F2BF6F74294879E1007352C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F2BF6F78294879E2007352C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,12 +443,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T73BLRAKR5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KarymPizza/Info.plist;
+				INFOPLIST_FILE = KarymPizza/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +456,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KarymPizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,12 +474,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T73BLRAKR5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KarymPizza/Info.plist;
+				INFOPLIST_FILE = KarymPizza/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +487,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KarymPizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
