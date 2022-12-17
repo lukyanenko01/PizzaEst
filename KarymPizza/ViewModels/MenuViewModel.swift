@@ -6,27 +6,11 @@
 //
 
 import UIKit
-import FirebaseFirestore
 
 final class MenuViewModel {
-        
-    func getProducts(complition: @escaping (Result<[Product], Error>) -> Void) {
-        DataBaseService.shared.productsRef.getDocuments { qSnapsot, error in
-            guard let qSnapsot = qSnapsot else {
-                if let error = error {
-                    complition(.failure(error))
-                }
-                return
-            }
-            let docs = qSnapsot.documents
-            var products = [Product]()
-            for doc in docs {
-                guard let product = Product(doc: doc) else { return }
-                products.append(product)
-            }
-            complition(.success(products))
-        }
-    }
+    
+    var products: Dynamic<[Product]> = Dynamic([])
+
     
     func setupNavigationBar(navigationItem: UINavigationItem,
                             navVc: UINavigationController?,

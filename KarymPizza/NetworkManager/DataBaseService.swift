@@ -16,6 +16,24 @@ class DataBaseService {
      var productsRef: CollectionReference {
         return db.collection("Menu")
     }
+    
+    func getProducts(complition: @escaping (Result<[Product], Error>) -> Void) {
+        productsRef.getDocuments { qSnapsot, error in
+            guard let qSnapsot = qSnapsot else {
+                if let error = error {
+                    complition(.failure(error))
+                }
+                return
+            }
+            let docs = qSnapsot.documents
+            var products = [Product]()
+            for doc in docs {
+                guard let product = Product(doc: doc) else { return }
+                products.append(product)
+            }
+            complition(.success(products))
+        }
+    }
 }
 
 

@@ -17,11 +17,19 @@ class MenuCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setConstraints()
-        
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupViews() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = .zero
+        layer.shadowOpacity = 0.2
+        layer.shadowRadius = 6
+        layer.cornerRadius = 6
     }
     
     func setup(product: Product) {

@@ -10,6 +10,7 @@
 		19ED770D073371B78C83E5B1 /* Pods_KarymPizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFF77B53283E13F12909289 /* Pods_KarymPizza.framework */; };
 		49E677849A570D628D68D64B /* Pods_KarymPizza_KarymPizzaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E020C1B0B75941A342C42A3 /* Pods_KarymPizza_KarymPizzaUITests.framework */; };
 		D83D86597E1A7BD2F4E27ACD /* Pods_KarymPizzaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD29CCEC17E15E4C8B88A25 /* Pods_KarymPizzaTests.framework */; };
+		F29084472949F28F00254522 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29084462949F28F00254522 /* Dynamic.swift */; };
 		F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6D294879E1007352C2 /* AppDelegate.swift */; };
 		F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */; };
 		F2BF6F72294879E1007352C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F71294879E1007352C2 /* HomeViewController.swift */; };
@@ -34,6 +35,9 @@
 		F2C1728E2948A3EE00BF96E1 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1728D2948A3EE00BF96E1 /* MenuViewModel.swift */; };
 		F2C172962948C59200BF96E1 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C172952948C59200BF96E1 /* MenuCell.swift */; };
 		F2CD66C02948EE580013B38A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66BF2948EE580013B38A /* UILabelExtension.swift */; };
+		F2CD66C22948F8960013B38A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66C12948F8960013B38A /* DetailsViewController.swift */; };
+		F2CD66C42948F9220013B38A /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66C32948F9220013B38A /* DetailsViewModel.swift */; };
+		F2CD66C72948F9850013B38A /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66C62948F9850013B38A /* DetailsView.swift */; };
 		F2CDC6112948DA94001871A0 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC6102948DA94001871A0 /* ViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +68,7 @@
 		9E020C1B0B75941A342C42A3 /* Pods_KarymPizza_KarymPizzaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarymPizza_KarymPizzaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA24419FF494BADCE8085CF /* Pods-KarymPizza-KarymPizzaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza-KarymPizzaUITests.release.xcconfig"; path = "Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA325C60E08D1C190564671E /* Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig"; path = "Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F29084462949F28F00254522 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		F2BF6F6A294879E1007352C2 /* KarymPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarymPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BF6F6D294879E1007352C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +92,9 @@
 		F2C1728D2948A3EE00BF96E1 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		F2C172952948C59200BF96E1 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		F2CD66BF2948EE580013B38A /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		F2CD66C12948F8960013B38A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F2CD66C32948F9220013B38A /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		F2CD66C62948F9850013B38A /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		F2CDC6102948DA94001871A0 /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +234,7 @@
 				F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */,
 				F2BF6FAA2948810A007352C2 /* ContactsViewController.swift */,
 				F2BF6FAC29488138007352C2 /* ProfileViewController.swift */,
+				F2CD66C52948F93D0013B38A /* Details */,
 				F2BF6FAE29488149007352C2 /* Home */,
 				F2CDC6122948E335001871A0 /* Menu */,
 				F2BF6FB02948816C007352C2 /* Cart */,
@@ -245,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				F2C1728D2948A3EE00BF96E1 /* MenuViewModel.swift */,
+				F29084462949F28F00254522 /* Dynamic.swift */,
+				F2CD66C32948F9220013B38A /* DetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -286,6 +297,15 @@
 				F2CD66BF2948EE580013B38A /* UILabelExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F2CD66C52948F93D0013B38A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				F2CD66C12948F8960013B38A /* DetailsViewController.swift */,
+				F2CD66C62948F9850013B38A /* DetailsView.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		F2CDC60F2948DA7E001871A0 /* MenuCell */ = {
@@ -558,6 +578,8 @@
 				F2C172962948C59200BF96E1 /* MenuCell.swift in Sources */,
 				F2CDC6112948DA94001871A0 /* ViewCell.swift in Sources */,
 				F2BF6F72294879E1007352C2 /* HomeViewController.swift in Sources */,
+				F29084472949F28F00254522 /* Dynamic.swift in Sources */,
+				F2CD66C42948F9220013B38A /* DetailsViewModel.swift in Sources */,
 				F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */,
 				F2CD66C02948EE580013B38A /* UILabelExtension.swift in Sources */,
 				F2C1728A2948A37200BF96E1 /* DataBaseService.swift in Sources */,
@@ -568,7 +590,9 @@
 				F2BF6FAD29488138007352C2 /* ProfileViewController.swift in Sources */,
 				F2C1728C2948A3B300BF96E1 /* Product.swift in Sources */,
 				F2BF6FA7294880A2007352C2 /* MenuViewController.swift in Sources */,
+				F2CD66C72948F9850013B38A /* DetailsView.swift in Sources */,
 				F2BF6FAB2948810A007352C2 /* ContactsViewController.swift in Sources */,
+				F2CD66C22948F8960013B38A /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,21 +11,24 @@ import FirebaseFirestore
 class MenuViewController: UIViewController {
     
     var viewModel = MenuViewModel()
-    var products: [Product] = []
     
     private var collection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.9725244641, green: 0.9724023938, blue: 0.9807130694, alpha: 1)
-        
-        viewModel.setupNavigationBar(navigationItem: navigationItem, navVc: navigationController, image: UIImage(named: "titleNavVc")!)
-        
-        viewModel.getProducts { result in
+        viewModel.setupNavigationBar(navigationItem: navigationItem,
+                                     navVc: navigationController,
+                                     image: UIImage(named: "titleNavVc")!)
+        getProduct()
+    }
+    
+    func getProduct() {
+        DataBaseService.shared.getProducts { result in
             self.configColletionView()
             switch result {
             case .success(let products):
-                self.products = products
+                self.viewModel.products.value = products
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -51,15 +54,14 @@ class MenuViewController: UIViewController {
 extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return products.count
+        return viewModel.products.value?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuCell.id, for: indexPath) as? MenuCell else { return UICollectionViewCell() }
-        cell.backgroundColor = .clear
-        cell.contentView.layer.cornerRadius = 6
-        cell.contentView.layer.masksToBounds = true
-        cell.setup(product: products[indexPath.item])
+        if let products = viewModel.products.value  {
+            cell.setup(product: (products[indexPath.item]))
+        }
         return cell
     }
     
@@ -67,6 +69,18 @@ extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelega
         let width = collectionView.frame.width / 2.1
         let heigth = collectionView.frame.height / 2.5
         return CGSize(width: width, height: heigth)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailsViewController()
+        if let products = viewModel.products.value {
+            vc.setup(product: products[indexPath.item])
+            if products[indexPath.item].title == "🦐 Пірма" {
+                vc.segmentetControl.removeSegment(at: 0, animated: true)
+                vc.stacSirBort.isHidden = true
+            }
+        }
+        present(vc, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
