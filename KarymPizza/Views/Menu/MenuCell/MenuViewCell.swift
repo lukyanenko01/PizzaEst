@@ -1,5 +1,5 @@
 //
-//  ViewCell.swift
+//  MenuViewCell.swift
 //  KarymPizza
 //
 //  Created by Vladimir Lukyanenko on 13.12.2022.
@@ -7,11 +7,13 @@
 
 import UIKit
 
-class ViewCell: UIView {
+class MenuViewCell: UIView {
+    
+    //MARK: - UI
     
     let nameLbl = UILabel(text: "", font: UIFont(name: "Arial Bold", size: 18), alignment: .center)
     private let priceSLbl = UILabel(text: "Розмір S", font: UIFont(name: "Arial", size: 14), alignment: .left)
-    let totalSLbl = UILabel(text: "", font: UIFont(name: "Arial Bold", size: 14), alignment: .left)
+    let totalSLbl = UILabel(text: "", font: UIFont(name: "Arial Bold", size: 14), alignment: .right)
     private let priceMLbl = UILabel(text: "Розмір M", font: UIFont(name: "Arial", size: 14), alignment: .left)
     let totalMLbl = UILabel(text: "", font: UIFont(name: "Arial Bold", size: 14), alignment: .right)
     private let priceXlLbl = UILabel(text: "Розмір Xl", font: UIFont(name: "Arial", size: 14), alignment: .left)
@@ -23,32 +25,13 @@ class ViewCell: UIView {
         return image
     }()
     
-    private lazy var stacImageName: UIStackView = {
-        let stac = UIStackView(arrangedSubviews: [productImageView, nameLbl])
-        stac.axis = .vertical
-        return stac
-    }()
+    private lazy var stacImageName = UIStackView(arrangedSubviews: [productImageView, nameLbl], axis: .vertical, distribution: .equalSpacing)
     
-    private lazy var stacTotalS: UIStackView = {
-        let stac = UIStackView(arrangedSubviews: [priceSLbl, totalSLbl])
-        stac.axis = .horizontal
-        stac.distribution = .fillProportionally
-        return stac
-    }()
+    private lazy var stacTotalS = UIStackView(arrangedSubviews: [priceSLbl, totalSLbl], axis: .horizontal, distribution: .fillProportionally)
     
-    private lazy var stacTotalM: UIStackView = {
-        let stac = UIStackView(arrangedSubviews: [priceMLbl, totalMLbl])
-        stac.axis = .horizontal
-        stac.distribution = .fillProportionally
-        return stac
-    }()
+    private lazy var stacTotalM = UIStackView(arrangedSubviews: [priceMLbl, totalMLbl], axis: .horizontal, distribution: .fillProportionally)
     
-    private lazy var stacTotalXl: UIStackView = {
-        let stac = UIStackView(arrangedSubviews: [priceXlLbl, totalXlLbl])
-        stac.axis = .horizontal
-        stac.distribution = .fillProportionally
-        return stac
-    }()
+    private lazy var stacTotalXl = UIStackView(arrangedSubviews: [priceXlLbl, totalXlLbl], axis: .horizontal, distribution: .fillProportionally)
     
      private lazy var stacMain: UIStackView = {
         let stac = UIStackView(arrangedSubviews: [stacImageName, stacTotalS, stacTotalM, stacTotalXl])

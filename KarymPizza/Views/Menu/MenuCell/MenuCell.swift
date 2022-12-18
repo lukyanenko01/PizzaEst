@@ -11,7 +11,7 @@ import SDWebImage
 class MenuCell: UICollectionViewCell {
     
     static let id = "MenuCell"
-    private let viewBacgraund = ViewCell()
+    private let viewBacgraund = MenuViewCell()
     
     //MARK: - Init
     override init(frame: CGRect) {
