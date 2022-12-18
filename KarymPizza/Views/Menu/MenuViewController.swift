@@ -12,8 +12,20 @@ class MenuViewController: UIViewController {
     
     var viewModel = MenuViewModel()
     
+        
     private var collection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
 
+    private let searchController = UISearchController(searchResultsController: nil)
+    
+    private var searchBarIsEmpty: Bool {
+        guard let text = searchController.searchBar.text else { return false }
+        return text.isEmpty
+    }
+    
+    private var isFiltering: Bool {
+        return searchController.isActive && !searchBarIsEmpty
+    }
+    
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +34,7 @@ class MenuViewController: UIViewController {
                                      navVc: navigationController,
                                      image: UIImage(named: "titleNavVc")!)
         getProduct()
+        setupSearchBar()
         setConstraints()
     }
     
@@ -47,6 +60,18 @@ class MenuViewController: UIViewController {
         collection.delegate = self
         collection.translatesAutoresizingMaskIntoConstraints = false
     }
+    
+    //MARK: - SearchBar
+    private func setupSearchBar() {
+        searchController.searchBar.placeholder = "Пошук"
+        searchController.searchBar.tintColor = .black
+        searchController.searchBar.barTintColor = .black
+        navigationItem.searchController = searchController
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchResultsUpdater = self
+        definesPresentationContext = true
+    }
 }
 
 //MARK: - Constraints
@@ -66,15 +91,24 @@ extension MenuViewController {
 extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.products.value?.count ?? 0
+        viewModel.countCell(isFiltering: isFiltering)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuCell.id, for: indexPath) as? MenuCell else { return UICollectionViewCell() }
-        if let products = viewModel.products.value  {
-            cell.setup(product: (products[indexPath.item]))
-        }
+        cell.setup(product: viewModel.filterForItemCell(isFiltering: isFiltering, index: indexPath.item))
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailsViewController()
+        let productDidSelect = viewModel.didselectFiltrItem(isFiltering: isFiltering, index: indexPath.item)
+        vc.setup(product: productDidSelect)
+        if productDidSelect.title == "🦐 Пірма" {
+            vc.segmentetControl.removeSegment(at: 0, animated: true)
+            vc.stacSirBort.isHidden = false
+        }
+        present(vc, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -88,23 +122,27 @@ extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelega
         return CGSize(width: width, height: heigth)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = DetailsViewController()
-        if let products = viewModel.products.value {
-            vc.setup(product: products[indexPath.item])
-            if products[indexPath.item].title == "🦐 Пірма" {
-                vc.segmentetControl.removeSegment(at: 0, animated: true)
-                vc.stacSirBort.isHidden = true
-            }
-        }
-        present(vc, animated: true)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         20
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         0
+    }
+}
+
+//MARK: - UISearchBarDelegate
+extension MenuViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+    
+    private func filterContentForSearchText(_ searchText: String) {
+        guard let products = viewModel.products.value else { return }
+        viewModel.filteredProducts.value = products.filter({ (product: Product) -> Bool in
+            return product.title.lowercased().contains(searchText.lowercased())
+        })
+        collection.reloadData()
     }
 }

@@ -11,6 +11,7 @@
 		49E677849A570D628D68D64B /* Pods_KarymPizza_KarymPizzaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E020C1B0B75941A342C42A3 /* Pods_KarymPizza_KarymPizzaUITests.framework */; };
 		D83D86597E1A7BD2F4E27ACD /* Pods_KarymPizzaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD29CCEC17E15E4C8B88A25 /* Pods_KarymPizzaTests.framework */; };
 		F27C3746294F4325001C88F5 /* UIStacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C3745294F4325001C88F5 /* UIStacView.swift */; };
+		F27C3748294F4FC0001C88F5 /* DynamicProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C3747294F4FC0001C88F5 /* DynamicProduct.swift */; };
 		F29084472949F28F00254522 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29084462949F28F00254522 /* Dynamic.swift */; };
 		F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6D294879E1007352C2 /* AppDelegate.swift */; };
 		F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6F294879E1007352C2 /* SceneDelegate.swift */; };
@@ -72,6 +73,7 @@
 		CFA24419FF494BADCE8085CF /* Pods-KarymPizza-KarymPizzaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza-KarymPizzaUITests.release.xcconfig"; path = "Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA325C60E08D1C190564671E /* Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig"; path = "Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F27C3745294F4325001C88F5 /* UIStacView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStacView.swift; sourceTree = "<group>"; };
+		F27C3747294F4FC0001C88F5 /* DynamicProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicProduct.swift; sourceTree = "<group>"; };
 		F29084462949F28F00254522 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		F2BF6F6A294879E1007352C2 /* KarymPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarymPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BF6F6D294879E1007352C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				F29084462949F28F00254522 /* Dynamic.swift */,
+				F27C3747294F4FC0001C88F5 /* DynamicProduct.swift */,
 				F2C1728D2948A3EE00BF96E1 /* MenuViewModel.swift */,
 				F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */,
 				F2CD66C32948F9220013B38A /* DetailsViewModel.swift */,
@@ -626,6 +629,7 @@
 				F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */,
 				F2BF6FAD29488138007352C2 /* LocationViewController.swift in Sources */,
 				F2C1728C2948A3B300BF96E1 /* Product.swift in Sources */,
+				F27C3748294F4FC0001C88F5 /* DynamicProduct.swift in Sources */,
 				F2BF6FA7294880A2007352C2 /* MenuViewController.swift in Sources */,
 				F2D72297294DCE7600A03440 /* HomeViewCell.swift in Sources */,
 				F2BF6FAB2948810A007352C2 /* ContactsViewController.swift in Sources */,

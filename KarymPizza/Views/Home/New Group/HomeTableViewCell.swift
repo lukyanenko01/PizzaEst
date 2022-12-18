@@ -19,6 +19,8 @@ class HomeTableViewCell: UITableViewCell {
         backgroundColor = #colorLiteral(red: 0.9725244641, green: 0.9724023938, blue: 0.9807130694, alpha: 1)
         mainView.layer.cornerRadius = 6
         mainView.clipsToBounds = true
+        mainView.layer.borderWidth = 1.5
+        mainView.layer.borderColor = CGColor(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
         setConstraints()
     }
     
