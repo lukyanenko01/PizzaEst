@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeTableViewCell: UITableViewCell {
     
@@ -26,6 +27,14 @@ class HomeTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    //MARK: - Setup content in Cell
+    public func setup(product: Home) {
+        self.mainView.nameLbl.text = product.title
+        self.mainView.descriptionLbl.text = product.descript
+        let url = URL(string: product.imageUrl)
+        self.mainView.imageView.sd_setImage(with: url)
     }
 
     //MARK: - Constraints

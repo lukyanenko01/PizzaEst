@@ -10,20 +10,18 @@ import UIKit
 class HomeViewCell: UIView {
     
     //MARK: - UI
-    let imageView: UIImageView = {
+    var imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "salse2")
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .white
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    let nameLbl = UILabel(text: "Замов 5 піц, плати за 4", font: UIFont(name: "Avenir Next Demi Bold", size: 20), alignment: .left)
+    var nameLbl = UILabel(text: "", font: UIFont(name: "Avenir Next Demi Bold", size: 20), alignment: .left)
     
-    let descriptionLbl: UILabel = {
+    var descriptionLbl: UILabel = {
         let lable = UILabel()
-        lable.text = "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
         lable.font = UIFont(name: "Avenir Next Demi", size: 14)
         lable.textAlignment = .left
         lable.numberOfLines = 2

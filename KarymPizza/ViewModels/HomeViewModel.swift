@@ -8,6 +8,12 @@
 import UIKit
 
 class HomeViewModel {
+    
+    var products: Dynamic<[Home]> = Dynamic([])
+    
+    
+    
+    //MARK: - NavigationBar
     func setupNavigationBar(navigationItem: UINavigationItem,
                             navVc: UINavigationController?,
                             image: UIImage) {
