@@ -22,7 +22,7 @@
 		F2BF6FA7294880A2007352C2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6FA6294880A2007352C2 /* MenuViewController.swift */; };
 		F2BF6FA9294880D0007352C2 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6FA8294880D0007352C2 /* CartViewController.swift */; };
 		F2BF6FAB2948810A007352C2 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6FAA2948810A007352C2 /* ContactsViewController.swift */; };
-		F2BF6FAD29488138007352C2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6FAC29488138007352C2 /* ProfileViewController.swift */; };
+		F2BF6FAD29488138007352C2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6FAC29488138007352C2 /* LocationViewController.swift */; };
 		F2BF6FB229488212007352C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2BF6FB129488212007352C2 /* GoogleService-Info.plist */; };
 		F2BF6FB52948835E007352C2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F2BF6FB42948835E007352C2 /* FirebaseAuth */; };
 		F2BF6FB72948835E007352C2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F2BF6FB62948835E007352C2 /* FirebaseDatabase */; };
@@ -37,8 +37,10 @@
 		F2CD66C02948EE580013B38A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66BF2948EE580013B38A /* UILabelExtension.swift */; };
 		F2CD66C22948F8960013B38A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66C12948F8960013B38A /* DetailsViewController.swift */; };
 		F2CD66C42948F9220013B38A /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66C32948F9220013B38A /* DetailsViewModel.swift */; };
-		F2CD66C72948F9850013B38A /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66C62948F9850013B38A /* DetailsView.swift */; };
 		F2CDC6112948DA94001871A0 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC6102948DA94001871A0 /* ViewCell.swift */; };
+		F2D72295294DCBAA00A03440 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72294294DCBAA00A03440 /* HomeTableViewCell.swift */; };
+		F2D72297294DCE7600A03440 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72296294DCE7600A03440 /* HomeViewCell.swift */; };
+		F2E6A9F8294F2EAE008EC446 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +86,7 @@
 		F2BF6FA6294880A2007352C2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F2BF6FA8294880D0007352C2 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		F2BF6FAA2948810A007352C2 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
-		F2BF6FAC29488138007352C2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F2BF6FAC29488138007352C2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		F2BF6FB129488212007352C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F2C172892948A37200BF96E1 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
@@ -94,8 +96,10 @@
 		F2CD66BF2948EE580013B38A /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		F2CD66C12948F8960013B38A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		F2CD66C32948F9220013B38A /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
-		F2CD66C62948F9850013B38A /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		F2CDC6102948DA94001871A0 /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
+		F2D72294294DCBAA00A03440 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F2D72296294DCE7600A03440 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +185,6 @@
 			children = (
 				F2BF6FA529488058007352C2 /* NetworkManager */,
 				F2BF6FA32948801F007352C2 /* Models */,
-				F2BF6FAF29488158007352C2 /* MenuModule */,
 				F2BF6FA229488008007352C2 /* Views */,
 				F2BF6FA42948802C007352C2 /* ViewModels */,
 				F2CD66BE2948EE1D0013B38A /* Extension */,
@@ -231,13 +234,13 @@
 		F2BF6FA229488008007352C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */,
-				F2BF6FAA2948810A007352C2 /* ContactsViewController.swift */,
-				F2BF6FAC29488138007352C2 /* ProfileViewController.swift */,
-				F2CD66C52948F93D0013B38A /* Details */,
 				F2BF6FAE29488149007352C2 /* Home */,
+				F2E6A9F6294F2D75008EC446 /* Location */,
 				F2CDC6122948E335001871A0 /* Menu */,
 				F2BF6FB02948816C007352C2 /* Cart */,
+				F2E6A9F5294F2D3A008EC446 /* Contacts */,
+				F2C4C1A2294E58FB006927DD /* TabBar */,
+				F2CD66C52948F93D0013B38A /* Details */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,8 +256,9 @@
 		F2BF6FA42948802C007352C2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F2C1728D2948A3EE00BF96E1 /* MenuViewModel.swift */,
 				F29084462949F28F00254522 /* Dynamic.swift */,
+				F2C1728D2948A3EE00BF96E1 /* MenuViewModel.swift */,
+				F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */,
 				F2CD66C32948F9220013B38A /* DetailsViewModel.swift */,
 			);
 			path = ViewModels;
@@ -272,15 +276,9 @@
 			isa = PBXGroup;
 			children = (
 				F2BF6F71294879E1007352C2 /* HomeViewController.swift */,
+				F2D72293294DCB8100A03440 /* HomeCell */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		F2BF6FAF29488158007352C2 /* MenuModule */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MenuModule;
 			sourceTree = "<group>";
 		};
 		F2BF6FB02948816C007352C2 /* Cart */ = {
@@ -289,6 +287,14 @@
 				F2BF6FA8294880D0007352C2 /* CartViewController.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		F2C4C1A2294E58FB006927DD /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6FBE29488E55007352C2 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		F2CD66BE2948EE1D0013B38A /* Extension */ = {
@@ -303,7 +309,6 @@
 			isa = PBXGroup;
 			children = (
 				F2CD66C12948F8960013B38A /* DetailsViewController.swift */,
-				F2CD66C62948F9850013B38A /* DetailsView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -324,6 +329,32 @@
 				F2CDC60F2948DA7E001871A0 /* MenuCell */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		F2D72293294DCB8100A03440 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				F2D72294294DCBAA00A03440 /* HomeTableViewCell.swift */,
+				F2D72296294DCE7600A03440 /* HomeViewCell.swift */,
+			);
+			name = HomeCell;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F2E6A9F5294F2D3A008EC446 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6FAA2948810A007352C2 /* ContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		F2E6A9F6294F2D75008EC446 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				F2BF6FAC29488138007352C2 /* LocationViewController.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,19 +609,21 @@
 				F2C172962948C59200BF96E1 /* MenuCell.swift in Sources */,
 				F2CDC6112948DA94001871A0 /* ViewCell.swift in Sources */,
 				F2BF6F72294879E1007352C2 /* HomeViewController.swift in Sources */,
+				F2E6A9F8294F2EAE008EC446 /* HomeViewModel.swift in Sources */,
 				F29084472949F28F00254522 /* Dynamic.swift in Sources */,
 				F2CD66C42948F9220013B38A /* DetailsViewModel.swift in Sources */,
 				F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */,
+				F2D72295294DCBAA00A03440 /* HomeTableViewCell.swift in Sources */,
 				F2CD66C02948EE580013B38A /* UILabelExtension.swift in Sources */,
 				F2C1728A2948A37200BF96E1 /* DataBaseService.swift in Sources */,
 				F2BF6FBF29488E55007352C2 /* MainTabBarController.swift in Sources */,
 				F2BF6FA9294880D0007352C2 /* CartViewController.swift in Sources */,
 				F2C1728E2948A3EE00BF96E1 /* MenuViewModel.swift in Sources */,
 				F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */,
-				F2BF6FAD29488138007352C2 /* ProfileViewController.swift in Sources */,
+				F2BF6FAD29488138007352C2 /* LocationViewController.swift in Sources */,
 				F2C1728C2948A3B300BF96E1 /* Product.swift in Sources */,
 				F2BF6FA7294880A2007352C2 /* MenuViewController.swift in Sources */,
-				F2CD66C72948F9850013B38A /* DetailsView.swift in Sources */,
+				F2D72297294DCE7600A03440 /* HomeViewCell.swift in Sources */,
 				F2BF6FAB2948810A007352C2 /* ContactsViewController.swift in Sources */,
 				F2CD66C22948F8960013B38A /* DetailsViewController.swift in Sources */,
 			);

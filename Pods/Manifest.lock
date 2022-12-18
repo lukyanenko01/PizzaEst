@@ -1,18 +1,22 @@
 PODS:
+  - NSVAnimatedTabBar (0.3.0)
   - SDWebImage (5.13.4):
     - SDWebImage/Core (= 5.13.4)
   - SDWebImage/Core (5.13.4)
 
 DEPENDENCIES:
+  - NSVAnimatedTabBar
   - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
+    - NSVAnimatedTabBar
     - SDWebImage
 
 SPEC CHECKSUMS:
+  NSVAnimatedTabBar: 88015c7b1ee7a78afbc2c8d2cb2a2e5c8231d879
   SDWebImage: e5cc87bf736e60f49592f307bdf9e157189298a3
 
-PODFILE CHECKSUM: e8284f728ef07cf649622b042075efd98f7b9331
+PODFILE CHECKSUM: 431d0f233b1e334a925444c1ddc4207a15e0d5ba
 
 COCOAPODS: 1.11.3

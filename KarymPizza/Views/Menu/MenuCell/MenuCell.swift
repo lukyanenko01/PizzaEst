@@ -13,7 +13,7 @@ class MenuCell: UICollectionViewCell {
     static let id = "MenuCell"
     private let viewBacgraund = ViewCell()
     
-    //MARK: Init
+    //MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setConstraints()
@@ -24,7 +24,8 @@ class MenuCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupViews() {
+    //MARK: - ShadowOffset
+    private func setupViews() {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = .zero
         layer.shadowOpacity = 0.2
@@ -32,7 +33,8 @@ class MenuCell: UICollectionViewCell {
         layer.cornerRadius = 6
     }
     
-    func setup(product: Product) {
+    //MARK: - Setup content in Cell
+    public func setup(product: Product) {
         self.viewBacgraund.nameLbl.text = product.title
         self.viewBacgraund.totalSLbl.text = String(product.priceS)
         self.viewBacgraund.totalMLbl.text = String(product.priceM)
@@ -41,7 +43,7 @@ class MenuCell: UICollectionViewCell {
         self.viewBacgraund.productImageView.sd_setImage(with: url)
     }
     
-    //MARK: Constraints
+    //MARK: - Constraints
     private func setConstraints() {
         contentView.addSubview(viewBacgraund)
         NSLayoutConstraint.activate([

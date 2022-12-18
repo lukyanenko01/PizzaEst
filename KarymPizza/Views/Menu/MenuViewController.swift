@@ -14,6 +14,7 @@ class MenuViewController: UIViewController {
     
     private var collection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
 
+    //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.9725244641, green: 0.9724023938, blue: 0.9807130694, alpha: 1)
@@ -21,8 +22,10 @@ class MenuViewController: UIViewController {
                                      navVc: navigationController,
                                      image: UIImage(named: "titleNavVc")!)
         getProduct()
+        setConstraints()
     }
     
+    //MARK: - DataBase
     func getProduct() {
         DataBaseService.shared.getProducts { result in
             self.configColletionView()
@@ -35,6 +38,7 @@ class MenuViewController: UIViewController {
         }
     }
     
+    //MARK: - Configure CollectionView
     private func configColletionView() {
         collection.register(MenuCell.self, forCellWithReuseIdentifier: MenuCell.id)
         collection.backgroundColor = .none
@@ -42,15 +46,23 @@ class MenuViewController: UIViewController {
         collection.dataSource = self
         collection.delegate = self
         collection.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(collection)
-        collection.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        collection.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        collection.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        collection.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100).isActive = true
     }
 }
 
-//MARK: Data Source & Delegate
+//MARK: - Constraints
+extension MenuViewController {
+    private func setConstraints() {
+        view.addSubview(collection)
+        NSLayoutConstraint.activate([
+            collection.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            collection.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            collection.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            collection.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
+        ])
+    }
+}
+
+//MARK: - Collection DataSource & Delegate
 extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -67,7 +79,12 @@ extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width / 2.1
-        let heigth = collectionView.frame.height / 2.5
+        var heigth: CGFloat = 0
+        if collectionView.frame.height <= 670 {
+            heigth = collectionView.frame.height / 2.5
+        } else {
+            heigth = collectionView.frame.height / 3
+        }
         return CGSize(width: width, height: heigth)
     }
     

@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  LocationViewController.swift
 //  KarymPizza
 //
 //  Created by Vladimir Lukyanenko on 13.12.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class LocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
