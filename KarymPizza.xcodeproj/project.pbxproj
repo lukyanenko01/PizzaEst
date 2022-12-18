@@ -43,6 +43,10 @@
 		F2D72297294DCE7600A03440 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72296294DCE7600A03440 /* HomeViewCell.swift */; };
 		F2E6A9F8294F2EAE008EC446 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */; };
 		F2F36FBF294F89B600F676C0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F36FBE294F89B600F676C0 /* Home.swift */; };
+		F2F36FC1294F937100F676C0 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F36FC0294F937100F676C0 /* Position.swift */; };
+		F2F36FC4294F9C2400F676C0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F36FC3294F9C2400F676C0 /* AuthService.swift */; };
+		F2F36FC6294F9CE900F676C0 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F36FC5294F9CE900F676C0 /* AuthViewController.swift */; };
+		F2F36FC8294F9FA000F676C0 /* CodeValidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F36FC7294F9FA000F676C0 /* CodeValidVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +108,10 @@
 		F2D72296294DCE7600A03440 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F2F36FBE294F89B600F676C0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F2F36FC0294F937100F676C0 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		F2F36FC3294F9C2400F676C0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F2F36FC5294F9CE900F676C0 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		F2F36FC7294F9FA000F676C0 /* CodeValidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeValidVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,13 +246,14 @@
 		F2BF6FA229488008007352C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F2F36FC2294F9B8200F676C0 /* Auth */,
 				F2BF6FAE29488149007352C2 /* Home */,
 				F2E6A9F6294F2D75008EC446 /* Location */,
 				F2CDC6122948E335001871A0 /* Menu */,
+				F2CD66C52948F93D0013B38A /* DetailsMenu */,
 				F2BF6FB02948816C007352C2 /* Cart */,
 				F2E6A9F5294F2D3A008EC446 /* Contacts */,
 				F2C4C1A2294E58FB006927DD /* TabBar */,
-				F2CD66C52948F93D0013B38A /* Details */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,6 +263,7 @@
 			children = (
 				F2C1728B2948A3B300BF96E1 /* Product.swift */,
 				F2F36FBE294F89B600F676C0 /* Home.swift */,
+				F2F36FC0294F937100F676C0 /* Position.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				F2C172892948A37200BF96E1 /* DataBaseService.swift */,
+				F2F36FC3294F9C2400F676C0 /* AuthService.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -311,12 +322,12 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		F2CD66C52948F93D0013B38A /* Details */ = {
+		F2CD66C52948F93D0013B38A /* DetailsMenu */ = {
 			isa = PBXGroup;
 			children = (
 				F2CD66C12948F8960013B38A /* DetailsViewController.swift */,
 			);
-			path = Details;
+			path = DetailsMenu;
 			sourceTree = "<group>";
 		};
 		F2CDC60F2948DA7E001871A0 /* MenuCell */ = {
@@ -361,6 +372,15 @@
 				F2BF6FAC29488138007352C2 /* LocationViewController.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		F2F36FC2294F9B8200F676C0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F2F36FC5294F9CE900F676C0 /* AuthViewController.swift */,
+				F2F36FC7294F9FA000F676C0 /* CodeValidVC.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -620,13 +640,17 @@
 				F29084472949F28F00254522 /* Dynamic.swift in Sources */,
 				F2CD66C42948F9220013B38A /* DetailsViewModel.swift in Sources */,
 				F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */,
+				F2F36FC1294F937100F676C0 /* Position.swift in Sources */,
 				F2D72295294DCBAA00A03440 /* HomeTableViewCell.swift in Sources */,
 				F2CD66C02948EE580013B38A /* UILabelExtension.swift in Sources */,
 				F2C1728A2948A37200BF96E1 /* DataBaseService.swift in Sources */,
 				F2BF6FBF29488E55007352C2 /* MainTabBarController.swift in Sources */,
 				F2BF6FA9294880D0007352C2 /* CartViewController.swift in Sources */,
+				F2F36FC8294F9FA000F676C0 /* CodeValidVC.swift in Sources */,
 				F2C1728E2948A3EE00BF96E1 /* MenuViewModel.swift in Sources */,
+				F2F36FC4294F9C2400F676C0 /* AuthService.swift in Sources */,
 				F2F36FBF294F89B600F676C0 /* Home.swift in Sources */,
+				F2F36FC6294F9CE900F676C0 /* AuthViewController.swift in Sources */,
 				F2BF6F70294879E1007352C2 /* SceneDelegate.swift in Sources */,
 				F2BF6FAD29488138007352C2 /* LocationViewController.swift in Sources */,
 				F2C1728C2948A3B300BF96E1 /* Product.swift in Sources */,

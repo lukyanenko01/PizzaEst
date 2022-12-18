@@ -1,22 +1,24 @@
 PODS:
-  - NSVAnimatedTabBar (0.3.0)
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
   - SDWebImage (5.13.4):
     - SDWebImage/Core (= 5.13.4)
   - SDWebImage/Core (5.13.4)
 
 DEPENDENCIES:
-  - NSVAnimatedTabBar
+  - FlagPhoneNumber
   - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
-    - NSVAnimatedTabBar
+    - FlagPhoneNumber
     - SDWebImage
 
 SPEC CHECKSUMS:
-  NSVAnimatedTabBar: 88015c7b1ee7a78afbc2c8d2cb2a2e5c8231d879
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
   SDWebImage: e5cc87bf736e60f49592f307bdf9e157189298a3
 
-PODFILE CHECKSUM: 431d0f233b1e334a925444c1ddc4207a15e0d5ba
+PODFILE CHECKSUM: 49ffaea6f6404fc957e537ac80944465d65cc493
 
 COCOAPODS: 1.11.3

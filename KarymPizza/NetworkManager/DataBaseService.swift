@@ -21,6 +21,13 @@ class DataBaseService {
         return db.collection("Home")
     }
     
+    var positionRef: CollectionReference {
+        return db.collection("Position")
+    }
+    
+    //MARK: - Set Position
+
+    
     //MARK: - Get Product
     func getProducts(complition: @escaping (Result<[Product], Error>) -> Void) {
         productsRef.getDocuments { qSnapsot, error in

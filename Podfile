@@ -7,7 +7,7 @@ target 'KarymPizza' do
 
   # Pods for KarymPizza
 pod 'SDWebImage', '~> 5.0'
-pod 'NSVAnimatedTabBar'
+pod "FlagPhoneNumber"
 
   target 'KarymPizzaTests' do
     inherit! :search_paths

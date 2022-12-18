@@ -56,6 +56,7 @@ extension HomeViewCell {
         addSubview(stacMain)
         NSLayoutConstraint.activate([
             imageView.heightAnchor.constraint(equalToConstant: 200),
+            imageView.widthAnchor.constraint(equalToConstant: bounds.width),
             nameLbl.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             descriptionLbl.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             descriptionLbl.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
