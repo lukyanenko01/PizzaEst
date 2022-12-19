@@ -26,11 +26,12 @@ class MenuCell: UICollectionViewCell {
     
     //MARK: - ShadowOffset
     private func setupViews() {
+        backgroundColor = .clear
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = .zero
         layer.shadowOpacity = 0.2
-        layer.shadowRadius = 6
-        layer.cornerRadius = 6
+        layer.shadowRadius = 3
+        layer.cornerRadius = 3
     }
     
     //MARK: - Setup content in Cell

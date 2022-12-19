@@ -56,6 +56,7 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "auth2")!)
+        
         setConstraint()
         setupConfig()
         buttonAction()
@@ -63,6 +64,7 @@ class AuthViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         DispatchQueue.main.async {
             if Auth.auth().currentUser?.uid == "SVPhhUtu90bCde1pm1FoZbXuYoT2" {
 //                let vc = AdminViewController()
@@ -71,11 +73,13 @@ class AuthViewController: UIViewController {
             } else if Auth.auth().currentUser?.uid != nil {
                 let vc = MainTabBarController()
                 vc.modalPresentationStyle = .overFullScreen
-                self.showDetailViewController(vc, sender: nil)
+                self.present(vc, animated: true)
             }
         }
         self.dismiss(animated: true)
     }
+    
+    
     
     private func buttonAction() {
         buttonEnter.addTarget(self, action: #selector(enterAction), for: .touchUpInside)

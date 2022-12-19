@@ -39,6 +39,8 @@
 		F2CD66C22948F8960013B38A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66C12948F8960013B38A /* DetailsViewController.swift */; };
 		F2CD66C42948F9220013B38A /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CD66C32948F9220013B38A /* DetailsViewModel.swift */; };
 		F2CDC6112948DA94001871A0 /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC6102948DA94001871A0 /* MenuViewCell.swift */; };
+		F2D25C8C2950C0780009AAE5 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D25C8B2950C0780009AAE5 /* CartTableViewCell.swift */; };
+		F2D25C8E2950C1800009AAE5 /* CartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D25C8D2950C1800009AAE5 /* CartViewCell.swift */; };
 		F2D72295294DCBAA00A03440 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72294294DCBAA00A03440 /* HomeTableViewCell.swift */; };
 		F2D72297294DCE7600A03440 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72296294DCE7600A03440 /* HomeViewCell.swift */; };
 		F2E6A9F8294F2EAE008EC446 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */; };
@@ -104,6 +106,8 @@
 		F2CD66C12948F8960013B38A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		F2CD66C32948F9220013B38A /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		F2CDC6102948DA94001871A0 /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
+		F2D25C8B2950C0780009AAE5 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		F2D25C8D2950C1800009AAE5 /* CartViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewCell.swift; sourceTree = "<group>"; };
 		F2D72294294DCBAA00A03440 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		F2D72296294DCE7600A03440 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -301,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				F2BF6FA8294880D0007352C2 /* CartViewController.swift */,
+				F2D25C8A2950C0600009AAE5 /* CartCell */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -346,6 +351,15 @@
 				F2CDC60F2948DA7E001871A0 /* MenuCell */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		F2D25C8A2950C0600009AAE5 /* CartCell */ = {
+			isa = PBXGroup;
+			children = (
+				F2D25C8B2950C0780009AAE5 /* CartTableViewCell.swift */,
+				F2D25C8D2950C1800009AAE5 /* CartViewCell.swift */,
+			);
+			path = CartCell;
 			sourceTree = "<group>";
 		};
 		F2D72293294DCB8100A03440 /* HomeCell */ = {
@@ -636,6 +650,7 @@
 				F2CDC6112948DA94001871A0 /* MenuViewCell.swift in Sources */,
 				F27C3746294F4325001C88F5 /* UIStacView.swift in Sources */,
 				F2BF6F72294879E1007352C2 /* HomeViewController.swift in Sources */,
+				F2D25C8E2950C1800009AAE5 /* CartViewCell.swift in Sources */,
 				F2E6A9F8294F2EAE008EC446 /* HomeViewModel.swift in Sources */,
 				F29084472949F28F00254522 /* Dynamic.swift in Sources */,
 				F2CD66C42948F9220013B38A /* DetailsViewModel.swift in Sources */,
@@ -644,6 +659,7 @@
 				F2D72295294DCBAA00A03440 /* HomeTableViewCell.swift in Sources */,
 				F2CD66C02948EE580013B38A /* UILabelExtension.swift in Sources */,
 				F2C1728A2948A37200BF96E1 /* DataBaseService.swift in Sources */,
+				F2D25C8C2950C0780009AAE5 /* CartTableViewCell.swift in Sources */,
 				F2BF6FBF29488E55007352C2 /* MainTabBarController.swift in Sources */,
 				F2BF6FA9294880D0007352C2 /* CartViewController.swift in Sources */,
 				F2F36FC8294F9FA000F676C0 /* CodeValidVC.swift in Sources */,

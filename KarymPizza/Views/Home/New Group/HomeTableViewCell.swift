@@ -17,18 +17,23 @@ class HomeTableViewCell: UITableViewCell {
     //MARK: - Life cycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        backgroundColor = #colorLiteral(red: 0.9725244641, green: 0.9724023938, blue: 0.9807130694, alpha: 1)
-        mainView.layer.cornerRadius = 6
-        mainView.clipsToBounds = true
-        mainView.layer.borderWidth = 1.5
-        mainView.layer.borderColor = CGColor(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
+        setupView()
         setConstraints()
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func setupView() {
+        backgroundColor = .clear
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = .zero
+        layer.shadowOpacity = 0.2
+        layer.shadowRadius = 3
+        layer.cornerRadius = 3
+    }
     //MARK: - Setup content in Cell
     public func setup(product: Home) {
         self.mainView.nameLbl.text = product.title

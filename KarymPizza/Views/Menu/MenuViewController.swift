@@ -11,7 +11,6 @@ import FirebaseFirestore
 class MenuViewController: UIViewController {
     
     var viewModel = MenuViewModel()
-    
         
     private var collection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
 
@@ -82,7 +81,7 @@ extension MenuViewController {
             collection.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
             collection.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             collection.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            collection.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
+            collection.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
         ])
     }
 }

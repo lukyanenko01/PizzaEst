@@ -41,6 +41,8 @@ class HomeViewCell: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
+        layer.cornerRadius = 6
+        clipsToBounds = true
         setConstraints()
         translatesAutoresizingMaskIntoConstraints = false
     }
@@ -57,9 +59,12 @@ extension HomeViewCell {
         NSLayoutConstraint.activate([
             imageView.heightAnchor.constraint(equalToConstant: 200),
             imageView.widthAnchor.constraint(equalToConstant: bounds.width),
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+            
             nameLbl.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             descriptionLbl.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             descriptionLbl.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            
             stacMain.topAnchor.constraint(equalTo: topAnchor, constant: 0),
             stacMain.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             stacMain.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0)
