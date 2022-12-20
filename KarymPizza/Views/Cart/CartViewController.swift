@@ -33,6 +33,12 @@ class CartViewController: UIViewController {
         configTable()
         buttonOrder.setTitle(" Оформити замовлення на: \(total) $", for: .normal)
         setConstraints()
+        buttonOrder.addTarget(self, action: #selector(buttonOrderAction), for: .touchUpInside)
+    }
+    
+    @objc func buttonOrderAction() {
+        let vc = DetailsCartViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     //MARK: - Configurate TableView
@@ -52,6 +58,12 @@ class CartViewController: UIViewController {
         imageView.contentMode = .scaleAspectFit
         navigationItem.titleView = imageView
         
+        navigationController?.navigationBar.tintColor = .black
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: self, action: #selector(backAction))
+        
+        navigationController?.navigationBar.tintColor = .black
+
         navigationController?.view.backgroundColor = .clear
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -62,8 +74,12 @@ class CartViewController: UIViewController {
         navigationItem.rightBarButtonItem = rightButton
     }
     
+    @objc func backAction() {
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     @objc func rightButtonAction() {
-        
+
     }
 }
 
@@ -82,7 +98,6 @@ extension CartViewController {
             buttonOrder.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             buttonOrder.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             buttonOrder.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
-            
         ])
     }
 }

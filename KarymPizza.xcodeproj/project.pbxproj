@@ -10,6 +10,9 @@
 		19ED770D073371B78C83E5B1 /* Pods_KarymPizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFF77B53283E13F12909289 /* Pods_KarymPizza.framework */; };
 		49E677849A570D628D68D64B /* Pods_KarymPizza_KarymPizzaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E020C1B0B75941A342C42A3 /* Pods_KarymPizza_KarymPizzaUITests.framework */; };
 		D83D86597E1A7BD2F4E27ACD /* Pods_KarymPizzaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD29CCEC17E15E4C8B88A25 /* Pods_KarymPizzaTests.framework */; };
+		F26E30562952426C00B1A1F1 /* DetailsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26E30552952426C00B1A1F1 /* DetailsCellView.swift */; };
+		F26E3058295242BE00B1A1F1 /* DetailOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26E3057295242BE00B1A1F1 /* DetailOrderCell.swift */; };
+		F26E305A295248E000B1A1F1 /* DetailsTestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26E3059295248E000B1A1F1 /* DetailsTestViewCell.swift */; };
 		F27C3746294F4325001C88F5 /* UIStacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C3745294F4325001C88F5 /* UIStacView.swift */; };
 		F29084472949F28F00254522 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29084462949F28F00254522 /* Dynamic.swift */; };
 		F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF6F6D294879E1007352C2 /* AppDelegate.swift */; };
@@ -41,6 +44,7 @@
 		F2CDC6112948DA94001871A0 /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC6102948DA94001871A0 /* MenuViewCell.swift */; };
 		F2D25C8C2950C0780009AAE5 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D25C8B2950C0780009AAE5 /* CartTableViewCell.swift */; };
 		F2D25C8E2950C1800009AAE5 /* CartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D25C8D2950C1800009AAE5 /* CartViewCell.swift */; };
+		F2D25C912950D1B50009AAE5 /* DetailsCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D25C902950D1B50009AAE5 /* DetailsCartViewController.swift */; };
 		F2D72295294DCBAA00A03440 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72294294DCBAA00A03440 /* HomeTableViewCell.swift */; };
 		F2D72297294DCE7600A03440 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72296294DCE7600A03440 /* HomeViewCell.swift */; };
 		F2E6A9F8294F2EAE008EC446 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */; };
@@ -78,6 +82,9 @@
 		9E020C1B0B75941A342C42A3 /* Pods_KarymPizza_KarymPizzaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarymPizza_KarymPizzaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA24419FF494BADCE8085CF /* Pods-KarymPizza-KarymPizzaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza-KarymPizzaUITests.release.xcconfig"; path = "Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA325C60E08D1C190564671E /* Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig"; path = "Target Support Files/Pods-KarymPizza-KarymPizzaUITests/Pods-KarymPizza-KarymPizzaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F26E30552952426C00B1A1F1 /* DetailsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCellView.swift; sourceTree = "<group>"; };
+		F26E3057295242BE00B1A1F1 /* DetailOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOrderCell.swift; sourceTree = "<group>"; };
+		F26E3059295248E000B1A1F1 /* DetailsTestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTestViewCell.swift; sourceTree = "<group>"; };
 		F27C3745294F4325001C88F5 /* UIStacView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStacView.swift; sourceTree = "<group>"; };
 		F29084462949F28F00254522 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		F2BF6F6A294879E1007352C2 /* KarymPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarymPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +115,7 @@
 		F2CDC6102948DA94001871A0 /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
 		F2D25C8B2950C0780009AAE5 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		F2D25C8D2950C1800009AAE5 /* CartViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewCell.swift; sourceTree = "<group>"; };
+		F2D25C902950D1B50009AAE5 /* DetailsCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCartViewController.swift; sourceTree = "<group>"; };
 		F2D72294294DCBAA00A03440 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		F2D72296294DCE7600A03440 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		F2E6A9F7294F2EAE008EC446 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -172,6 +180,16 @@
 				0518E63F3886C08422AD4BD2 /* Pods-KarymPizzaTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F26E30542952420E00B1A1F1 /* DetailsOrderCell */ = {
+			isa = PBXGroup;
+			children = (
+				F26E30552952426C00B1A1F1 /* DetailsCellView.swift */,
+				F26E3059295248E000B1A1F1 /* DetailsTestViewCell.swift */,
+				F26E3057295242BE00B1A1F1 /* DetailOrderCell.swift */,
+			);
+			path = DetailsOrderCell;
 			sourceTree = "<group>";
 		};
 		F2BF6F61294879E0007352C2 = {
@@ -256,6 +274,7 @@
 				F2CDC6122948E335001871A0 /* Menu */,
 				F2CD66C52948F93D0013B38A /* DetailsMenu */,
 				F2BF6FB02948816C007352C2 /* Cart */,
+				F2D25C8F2950D1950009AAE5 /* DetailsCart */,
 				F2E6A9F5294F2D3A008EC446 /* Contacts */,
 				F2C4C1A2294E58FB006927DD /* TabBar */,
 			);
@@ -360,6 +379,15 @@
 				F2D25C8D2950C1800009AAE5 /* CartViewCell.swift */,
 			);
 			path = CartCell;
+			sourceTree = "<group>";
+		};
+		F2D25C8F2950D1950009AAE5 /* DetailsCart */ = {
+			isa = PBXGroup;
+			children = (
+				F2D25C902950D1B50009AAE5 /* DetailsCartViewController.swift */,
+				F26E30542952420E00B1A1F1 /* DetailsOrderCell */,
+			);
+			path = DetailsCart;
 			sourceTree = "<group>";
 		};
 		F2D72293294DCB8100A03440 /* HomeCell */ = {
@@ -649,6 +677,7 @@
 				F2C172962948C59200BF96E1 /* MenuCell.swift in Sources */,
 				F2CDC6112948DA94001871A0 /* MenuViewCell.swift in Sources */,
 				F27C3746294F4325001C88F5 /* UIStacView.swift in Sources */,
+				F26E30562952426C00B1A1F1 /* DetailsCellView.swift in Sources */,
 				F2BF6F72294879E1007352C2 /* HomeViewController.swift in Sources */,
 				F2D25C8E2950C1800009AAE5 /* CartViewCell.swift in Sources */,
 				F2E6A9F8294F2EAE008EC446 /* HomeViewModel.swift in Sources */,
@@ -657,13 +686,16 @@
 				F2BF6F6E294879E1007352C2 /* AppDelegate.swift in Sources */,
 				F2F36FC1294F937100F676C0 /* Position.swift in Sources */,
 				F2D72295294DCBAA00A03440 /* HomeTableViewCell.swift in Sources */,
+				F26E3058295242BE00B1A1F1 /* DetailOrderCell.swift in Sources */,
 				F2CD66C02948EE580013B38A /* UILabelExtension.swift in Sources */,
 				F2C1728A2948A37200BF96E1 /* DataBaseService.swift in Sources */,
 				F2D25C8C2950C0780009AAE5 /* CartTableViewCell.swift in Sources */,
 				F2BF6FBF29488E55007352C2 /* MainTabBarController.swift in Sources */,
 				F2BF6FA9294880D0007352C2 /* CartViewController.swift in Sources */,
+				F2D25C912950D1B50009AAE5 /* DetailsCartViewController.swift in Sources */,
 				F2F36FC8294F9FA000F676C0 /* CodeValidVC.swift in Sources */,
 				F2C1728E2948A3EE00BF96E1 /* MenuViewModel.swift in Sources */,
+				F26E305A295248E000B1A1F1 /* DetailsTestViewCell.swift in Sources */,
 				F2F36FC4294F9C2400F676C0 /* AuthService.swift in Sources */,
 				F2F36FBF294F89B600F676C0 /* Home.swift in Sources */,
 				F2F36FC6294F9CE900F676C0 /* AuthViewController.swift in Sources */,
